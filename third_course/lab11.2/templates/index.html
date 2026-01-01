@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>lab11.2</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="../resources/static/style.css">
+</head>
+
+<body class="min-h-screen bg-slate-950 text-slate-100">
+  <div class="mx-auto max-w-4xl px-4 py-10">
+    <div class="rounded-2xl border border-white/10 bg-white/5 p-6 backdrop-blur">
+      <h1 class="text-2xl font-bold">Наслідування: Man → Student</h1>
+      <p class="mt-2 text-slate-300">
+        Student наслідує від Man, додає номер групи та спеціальність, і перевизначає toString().
+      </p>
+
+      <div class="mt-5 flex flex-wrap gap-3">
+        <button id="runBtn"
+          class="rounded-xl bg-indigo-500 px-4 py-2 font-semibold text-white shadow
+                 hover:bg-indigo-400 active:bg-indigo-600 transition">
+          Тицяй
+        </button>
+
+        <button id="clearBtn"
+          class="rounded-xl bg-white/10 px-4 py-2 font-semibold text-white
+                 hover:bg-white/15 active:bg-white/20 transition">
+          Очистити
+        </button>
+      </div>
+
+      <pre id="out"
+        class="mt-6 rounded-2xl border border-white/10 bg-black/30 p-4 text-sm text-slate-200 overflow-auto"></pre>
+    </div>
+  </div>
+
+  <script src="../resources/static/app.js" defer></script>
+</body>
+</html>

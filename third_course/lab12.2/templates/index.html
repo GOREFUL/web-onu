@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>lab12.2</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="../resources/static/style.css">
+</head>
+
+<body class="min-h-screen bg-slate-950 text-slate-100">
+  <div class="mx-auto max-w-3xl px-4 py-10">
+    <div class="rounded-2xl border border-white/10 bg-white/5 p-6 backdrop-blur">
+
+      <div class="mt-2">
+        <h2 class="text-lg font-semibold">Картинки (радіо → popup)</h2>
+        <p class="mt-1 text-sm text-slate-400">
+          Перемикай радіо — картинка в додатковому вікні змінюється одразу.
+        </p>
+        <div class="mt-4" id="radioBox" class="grid gap-3"></div>
+      </div>
+
+      <div id="popupStatus" class="mt-5 text-sm text-slate-400"></div>
+
+      <div class="mt-4 flex gap-3">
+        <button id="reopenBtn"
+          class="rounded-xl bg-indigo-500 px-4 py-2 font-semibold text-white shadow
+                 hover:bg-indigo-400 active:bg-indigo-600 transition">
+          Тицяй (відкрити/перевідкрити popup)
+        </button>
+      </div>
+
+      <div class="mt-8 rounded-2xl border border-white/10 bg-black/20 p-5">
+        <h2 class="text-lg font-semibold">Фрази (радіо → текстове поле)</h2>
+        <p class="mt-1 text-sm text-slate-400">
+          Обери фразу — вона одразу з’явиться у полі нижче.
+        </p>
+
+        <div id="phraseBox" class="mt-4 grid gap-3"></div>
+
+        <label class="mt-4 block">
+          <span class="text-sm text-slate-300">Текстове поле</span>
+          <textarea id="phraseField" rows="3"
+            class="mt-1 w-full rounded-xl bg-white/10 px-3 py-2 text-slate-100 outline-none
+                   border border-white/10 focus:border-indigo-400 resize-none"
+            readonly></textarea>
+        </label>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="../resources/static/app.js" defer></script>
+</body>
+</html>

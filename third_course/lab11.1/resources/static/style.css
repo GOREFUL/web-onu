@@ -1,0 +1,7 @@
+#out {
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+.pass { color: #86efac; } /* green-300 */
+.fail { color: #fca5a5; } /* red-300 */
+.dim  { color: rgba(226, 232, 240, 0.75); } /* slate-200-ish */

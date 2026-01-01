@@ -1,0 +1,4 @@
+.spawn {
+  will-change: transform;
+  user-select: none;
+}

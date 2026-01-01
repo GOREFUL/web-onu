@@ -1,0 +1,7 @@
+:root {
+  --bg-transition: 500ms;
+}
+
+body {
+  transition: background-color var(--bg-transition) ease;
+}

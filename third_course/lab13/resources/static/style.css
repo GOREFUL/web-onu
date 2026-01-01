@@ -1,0 +1,10 @@
+.count-inline {
+  font-variant-numeric: tabular-nums;
+  padding: 0 0.15em;
+  border-radius: 0.35em;
+}
+
+.count-inline:hover {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}

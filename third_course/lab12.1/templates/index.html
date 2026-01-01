@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>lab12.1</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="../resources/static/style.css">
+</head>
+
+<body id="page" class="min-h-screen text-slate-100 bg-slate-950 transition-colors duration-500">
+  <div class="mx-auto max-w-4xl px-4 py-10">
+    <div class="rounded-2xl border border-white/10 bg-white/5 p-6 backdrop-blur">
+      <h1 class="text-2xl font-bold">Лаба: 2 завдання</h1>
+
+      <div class="mt-6 rounded-2xl border border-white/10 bg-black/20 p-5">
+        <h2 class="text-lg font-semibold">Завдання 1 — зміна фону за інтервалом</h2>
+
+        <div class="mt-4 flex flex-wrap items-end gap-3">
+          <label class="block">
+            <span class="text-sm text-slate-300">Інтервал (секунди)</span>
+            <input id="intervalInput" type="number" min="1" value="2"
+              class="mt-1 w-40 rounded-xl bg-white/10 px-3 py-2 text-slate-100 outline-none
+                     border border-white/10 focus:border-indigo-400"
+              placeholder="Напр. 2">
+          </label>
+
+          <button id="startBgBtn"
+            class="rounded-xl bg-indigo-500 px-4 py-2 font-semibold text-white shadow
+                   hover:bg-indigo-400 active:bg-indigo-600 transition">
+            Старт
+          </button>
+
+          <button id="stopBgBtn"
+            class="rounded-xl bg-white/10 px-4 py-2 font-semibold text-white
+                   hover:bg-white/15 active:bg-white/20 transition">
+            Стоп
+          </button>
+
+          <div id="bgStatus" class="ml-auto text-sm text-slate-300"></div>
+        </div>
+      </div>
+
+      <div class="mt-6 rounded-2xl border border-white/10 bg-black/20 p-5">
+        <h2 class="text-lg font-semibold">Завдання 2 — випадкові стиль/шрифт для 1-го абзацу</h2>
+
+        <div class="mt-4 space-y-3">
+          <p id="p1" class="text-slate-200">
+            Це перший абзац. Натисни кнопку — і його розмір (10–50px) та шрифт зміняться випадково.
+          </p>
+          <p class="text-slate-300">
+            Демонстративний другий абзац.
+          </p>
+        </div>
+
+        <div class="mt-4 flex flex-wrap gap-3">
+          <button id="randomizeBtn"
+            class="rounded-xl bg-emerald-500 px-4 py-2 font-semibold text-white shadow
+                   hover:bg-emerald-400 active:bg-emerald-600 transition">
+            Змінити 1-й абзац випадково
+          </button>
+
+          <button id="resetBtn"
+            class="rounded-xl bg-white/10 px-4 py-2 font-semibold text-white
+                   hover:bg-white/15 active:bg-white/20 transition">
+            Відновити все
+          </button>
+
+          <div id="textStatus" class="ml-auto text-sm text-slate-300"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="../resources/static/app.js" defer></script>
+</body>
+</html>
